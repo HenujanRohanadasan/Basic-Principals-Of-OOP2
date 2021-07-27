@@ -5,10 +5,10 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 	[SerializeField] float speed = 5.0f;
-	[SerializeField] Rigidbody enemyRb;
+	public Rigidbody enemyRb;
 
-    private GameObject player;
-    [SerializeField] float strengthUpSpeed = 15.0f;
+    protected GameObject player;
+    public float strengthUpSpeed = 15.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-	public void SmashAtack()
+	public virtual void SmashAtack()//polymorphism
     {
         Vector3 awayFromPlayer = (transform.position - player.transform.position).normalized;
 
@@ -39,14 +39,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void EnemyMovement()
+    protected void EnemyMovement()//Abstraction
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
 
         enemyRb.AddForce(lookDirection * speed);
     }
 
-    private void destroyItself()
+    protected void destroyItself()//Abstraction
     {
         if (transform.position.y < -2)
         {

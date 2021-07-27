@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
 		}
     }
 	
-	void spawnEnemyWave(int enimiesToSpawn)
+	void spawnEnemyWave(int enimiesToSpawn)//Abstraction
 	{
 		for(int i = 0; i < enimiesToSpawn; i++)
 		{
@@ -45,7 +45,7 @@ public class SpawnManager : MonoBehaviour
             }
 		}
 	}
-	private Vector3 GenerateSpawnPos()
+	private Vector3 GenerateSpawnPos()//Abstraction
 	{
 		float spawnPosX = Random.Range(-spawnRange,spawnRange);
 		float spawnPosZ = Random.Range(-spawnRange,spawnRange);
@@ -55,16 +55,16 @@ public class SpawnManager : MonoBehaviour
 		return randomPos;
 	}
 
-	void PowerUpSpawn()
-    {
+	void PowerUpSpawn()//Abstraction
+	{
 		int powerUpIndex = Random.Range(0, powerupPrefab.Length);
 		waveNumber++;
 		spawnEnemyWave(waveNumber);
 		Instantiate(powerupPrefab[powerUpIndex], GenerateSpawnPos(), powerupPrefab[powerUpIndex].transform.rotation);
 	}
 
-	void SpawnBoss()
-    {
+	void SpawnBoss()//Abstraction
+	{
 		Instantiate(enemyPrefab[2], GenerateSpawnPos(), enemyPrefab[2].transform.rotation);
 		Island.localScale += new Vector3(1, 1, 1);
 	}

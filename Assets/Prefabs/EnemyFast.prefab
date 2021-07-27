@@ -9,12 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334272413784801127}
-  - component: {fileID: 2285096600799441815}
   - component: {fileID: 1334272413784801126}
   - component: {fileID: 1334272413784801121}
   - component: {fileID: 1334272413784801120}
   - component: {fileID: 1334272413784801123}
-  - component: {fileID: 1334272413784801124}
+  - component: {fileID: -3173039072166279483}
   m_Layer: 0
   m_Name: EnemyFast
   m_TagString: Enemy
@@ -36,21 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2285096600799441815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334272413784801122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d7f4b8bf5f759439b4c77b887a01d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
-  enemyRb: {fileID: 1334272413784801123}
-  strengthUpSpeed: 12.5
 --- !u!33 &1334272413784801126
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -129,18 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1334272413784801124
+--- !u!114 &-3173039072166279483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334272413784801122}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33d7f4b8bf5f759439b4c77b887a01d4, type: 3}
+  m_Script: {fileID: 11500000, guid: d1a755ad05b057042845e9ba21f6efda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 40
   enemyRb: {fileID: 1334272413784801123}
   strengthUpSpeed: 15

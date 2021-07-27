@@ -95,15 +95,15 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void PlayerMovement()
+	void PlayerMovement()//Abstraction
 	{
 		float verticalInput = Input.GetAxis("Vertical");
 
 		playerRb.AddForce(focalPoint.transform.forward * speed * verticalInput);
 	}
 
-	void GravityAtack()
-    {
+	void GravityAtack()//Abstraction
+	{
 		IsladCollider.enabled = false;
 		StartCoroutine(ActivateMeshCollider());
     }

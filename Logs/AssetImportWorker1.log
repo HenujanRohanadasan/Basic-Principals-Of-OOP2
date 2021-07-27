@@ -1,0 +1,21 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 18362.959; Version 1903; 64bit' Language: 'en' Physical Memory: 3947 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+G:\Unity\Unity-2020.3.7f1\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+G:/Unity/Create With Code/Basic-Principals-Of-OOP
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49717
+Successfully changed project path to: G:/Unity/Create With Code/Basic-Principals-Of-OOP
+G:/Unity/Create With Code/Basic-Principals-Of-OOP
+Using Asset Import Pipeline V2.
